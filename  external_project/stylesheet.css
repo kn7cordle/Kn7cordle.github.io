@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@200&family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,600&display=swap');
+
+/* font-family: "Barlow", sans-serif;
+font-family: "Albert Sans", sans-serif;
+font-family: "Playfair", serif;
+*/
+
+header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   grid-area: header;
+   background-color: blue;
+  
+  
+}
+
+h1 {
+    font-family: "Playfair", serif;
+}
+
+h2, p, ul li  {
+    font-family: "Barlow", sans-serif;
+}
+
+header img {
+   height: 80px;
+   width: auto;
+}
+
+.houston img {
+   
+    width: 75%;
+   height: auto;
+   border-radius: 10px;
+   object-fit: cover;
+
+}
+nav {
+   grid-area: nav;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   background-color: rgb(211, 208, 208);
+   padding: 10px 15px;
+   max-width: fit-content;
+}
+
+footer {
+   grid-area: footer;
+   background-color: blue;
+   border: 2px solid;
+   margin-top: 30px;
+
+}
+
+footer a {
+   color: #ffff;
+}
+
+main {
+   grid-area: main;
+
+}
+
+
+#container {
+   display: grid; 
+grid-template-columns: 200px 3fr 3fr 3fr 3fr;
+grid-template-rows:auto;
+grid-template-areas: 
+"header header header header   "
+"nav main main main "
+"footer footer footer footer"
+
+}
+
+.real-estate {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   padding: 20px 0;
+
+   
+}
+
+.real-estate img {
+   width: 250px;
+   height: auto;
+   
+}
+
+.products {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+   margin-top: 40px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+   padding-left: 15px;
+   padding-bottom: 50px;
+   border: 2px solid;
+   border-radius: 10px ;
+   background-color: #826fbf ;
+}
+   
+
+.products img {
+   width: 75%;
+   height: auto;
+   border-radius: 10px;
+   object-fit: cover;
+}
+
+.realty {
+   padding-left: 25px;
+}
+
+.elite_circle {
+   background-color: black;
+   color: #ffff;
+   padding: 10px;
+}
+
+.elite_circle img {
+    width: 25%;
+   height: auto;
+   border-radius: 10px;
+   object-fit: cover;
+}
+
+@media (max-width: 980px) {
+   .products {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding-left: 10px;
+}
+}
+
+@media (max-width:715px) {
+   .products {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding-left: 5px;
+
+   }
+}
